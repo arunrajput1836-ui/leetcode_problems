@@ -34,6 +34,25 @@ class Solution {
 }
 
 //125. Valid Palindrome
+class Solution {
+    public boolean isPalindrome(String s) {
+        s = s.toLowerCase();
+        String reqstr = new String();
+        for (int i = 0;i< s.length();i++){
+            char ch = s.charAt(i);
+            if(Character.isAlphabetic(ch) || Character.isDigit(ch)){
+                reqstr = reqstr + ch;
+            
+            }
+
+        }
+        StringBuilder sb = new StringBuilder(reqstr);
+        sb.reverse();
+        String revstr = sb.toString();
+        return reqstr.equals(revstr);
+        
+    }
+}
 
 
 
