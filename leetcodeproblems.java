@@ -44,7 +44,7 @@ class Solution {
             if(Character.isAlphabetic(ch) || Character.isDigit(ch)){
                 reqstr = reqstr + ch;
             
-             }
+              }
 
         }
         StringBuilder sb = new StringBuilder(reqstr);
