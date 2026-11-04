@@ -112,6 +112,27 @@ public class Solution {
     }
 
 349. Intersection of Two Arrays
+  
+  class Solution {
+    public int[] intersection(int[] nums1, int[] nums2) {
+        HashSet<Integer> h=new HashSet<>();
+        HashSet<Integer> res = new HashSet<>();
+
+        for(int n:nums1)
+        h.add(n);
+        for(int n:nums2)
+        {
+            if(h.contains(n))
+            res.add(n);
+
+        }   
+        int ar[]=new int[res.size()];
+        int i =0;
+        for(int n:res)
+        ar[i++]=n;
+        return ar;     
+    }
+}
 
 
 
